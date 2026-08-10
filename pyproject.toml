@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "awst"
-version = "0.0.1"
+version = "0.0.0"
 description = "Lightweight AWS CLI wrapper — compact output for humans and agents"
 readme = "README.md"
 requires-python = ">=3.10"
