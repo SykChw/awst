@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "awst"
+version = "0.0.1"
+description = "Lightweight AWS CLI wrapper — compact output for humans and agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sayak Chowdhury" }]
+keywords = ["aws", "cli", "ec2", "devops"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = []
+[project.optional-dependencies]
+rich = ["rich>=13.0"]
+watch = ["watchdog>=3.0"]
+all = ["rich>=13.0", "watchdog>=3.0"]
+[project.scripts]
+awst = "awst.cli:main"
+[project.urls]
+Repository = "https://github.com/SykChw/awst"
+[tool.hatch.build.targets.wheel]
+packages = ["src/awst"]
+[tool.hatch.build.targets.sdist]
+only-include = ["src/awst", "README.md", "pyproject.toml"]
