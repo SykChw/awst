@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "awst"
-version = "0.0.0"
+version = "0.0.1"
 description = "Lightweight AWS CLI wrapper — compact output for humans and agents"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Sayak Chowdhury" }]
+authors = [{ name = "sykchw" }]
 keywords = ["aws", "cli", "ec2", "devops"]
 classifiers = [
     "Development Status :: 4 - Beta",
